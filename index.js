@@ -37,3 +37,7 @@ function contact(){
     document.getElementById("hero-projets").style.display='none';
     document.getElementById("hero-contact").style.display='flex';  
 }
+function graphique(){
+    document.getElementById("boutton").style.display='none';
+    document.getElementById("graphique").style.display='flex';
+}

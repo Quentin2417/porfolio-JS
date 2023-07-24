@@ -87,20 +87,30 @@ p {
   padding: 5px;
   margin-left: 30px;
 }
-#icone-git img {
-  width: 130px;
-  margin-left: 180px;
-  margin-top: -75px;
+#icone-git{
+  display: block;
+  
+  
 }
+
+#icone-git img {
+  width: 30vh;
+}
+
+#icone-mail{
+ display: block;
+}
+
 #icone-mail img {
-  width: 130px;
-  margin-left: 1600px;
-  margin-top: 160px;
+  width: 30vh;
+  
+}
+#icone-in{
+  display: block;
 }
 #icone-in img {
-  width: 130px;
-  margin-left: 1500px;
-  margin-top: 350px;
+  width: 30vh;
+  
 }
 #onepiece img {
   width: 500px;
@@ -131,21 +141,22 @@ h {
   font-size: 3rem;
 }
 p1 {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 /* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-}
+} */
 
-body {
+#boutton {
     background: #131416;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 94vh;
+    top: 50vh;
+    left: 50vh;
 } 
 a1{
     color: white;
@@ -153,7 +164,6 @@ a1{
     background: black;
     height: 60px;
     width: 250px;
-    display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid #892cdc;
@@ -178,10 +188,10 @@ a1::before{
 a1:hover::before{
     top: 0;
     border-radius: 0;
-}  */
+}
 
 main {
-  display: flex;
+  display: none;
   min-height: 90vh;
   width: 100%;
   align-items: flex-end;
