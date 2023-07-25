@@ -42,7 +42,7 @@ header {
 }
 #hero-profil {
   background: url("/img/photoprofil.jpg");
-  display: none;
+  display: flex;
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,7 +50,7 @@ header {
 }
 #hero-compétences {
   background: url("/img/photocompetence.jpg");
-  display: none;
+  display: flex;
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,7 +58,7 @@ header {
 }
 #hero-projets {
   background: url("/img/photoprojets.jpg");
-  display: none;
+  display: flex;
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -66,7 +66,7 @@ header {
 }
 #hero-contact {
   background: url("/img/photocontact.jpg");
-  display: none;
+  display: flex;
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,67 +88,75 @@ p {
   margin-left: 30px;
 }
 #icone-git{
-  display: block;
-  
-  
+  position: absolute;
+  top: 30vh;
+  left: 18vh;
 }
 
 #icone-git img {
-  width: 30vh;
+  width: 150px;
+  height: 150px; 
 }
 
 #icone-mail{
- display: block;
+  position: absolute;
+  top: 22vh;
+  left: 120vh;
 }
 
 #icone-mail img {
-  width: 30vh;
+  width: 120px;
+  height: 120px;
   
 }
 #icone-in{
-  display: block;
+  position: absolute;
+  top: 65vh;
+  left: 120vh;
 }
 #icone-in img {
-  width: 30vh;
+  width: 150px;
+  height: 150px;
   
 }
 #onepiece img {
-  width: 500px;
-  height: 410;
-  margin-left: 140px;
-  margin-top: 330px;
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 40vh;
+  left: 5vh;
+  
 }
 #naruto img {
-  width: 500px;
-  height: 425px;
-  margin-left: 700px;
-  margin-top: -1000px;
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 40vh;
+  left: 53vh;
+  
 }
 #dragonball img {
-  width: 500px;
-  margin-left: 1262px;
-  margin-top: -427px;
-  margin-bottom: 55px;
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 40vh;
+  right: 5vh;
+  
+  
 }
 .bienvenue {
   margin: 0px;
-  color: rgba(0, 4, 255, 0.966);
-  text-shadow: rgb(241, 239, 239) 1px 0 10px;
+  color: rgba(103, 253, 3, 0.966);
+  text-shadow: rgb(1, 1, 12) 1px 0 10px;
   font-size: 3rem;
   margin-left: 15px;
 }
 h {
-  font-size: 3rem;
+  font-size: 100px;
 }
 p1 {
-  font-size: 1.2rem;
+  font-size: 25px;
 }
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-} */
 
 #boutton {
     background: #131416;
@@ -156,7 +164,7 @@ p1 {
     align-items: center;
     justify-content: center;
     top: 50vh;
-    left: 50vh;
+    left: 58.5vh;
 } 
 a1{
     color: white;
@@ -211,10 +219,11 @@ main {
   margin-top: -250px;
 }
 #imgcompet img {
-  width: 50%;
-  margin-left: 500px;
-  margin-top: 200px;
-
+  position: absolute;
+  width: 80vh;
+  height: 50vh;
+  top: 30vh;
+  left: 33vh;
 }
 
 @media screen and (max-width: 768px) {
