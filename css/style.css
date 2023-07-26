@@ -42,7 +42,7 @@ header {
 }
 #hero-profil {
   background: url("/img/photoprofil.jpg");
-  display: flex;
+  display: none;
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,7 +50,7 @@ header {
 }
 #hero-compétences {
   background: url("/img/photocompetence.jpg");
-  display: flex;
+  display: none;
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,15 +58,17 @@ header {
 }
 #hero-projets {
   background: url("/img/photoprojets.jpg");
-  display: flex;
+  display: none;
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 #hero-contact {
   background: url("/img/photocontact.jpg");
-  display: flex;
+  display: none;
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -117,31 +119,6 @@ p {
 #icone-in img {
   width: 150px;
   height: 150px;
-  
-}
-#onepiece img {
-  position: absolute;
-  width: 350px;
-  height: 350px;
-  top: 40vh;
-  left: 5vh;
-  
-}
-#naruto img {
-  position: absolute;
-  width: 350px;
-  height: 350px;
-  top: 40vh;
-  left: 53vh;
-  
-}
-#dragonball img {
-  position: absolute;
-  width: 350px;
-  height: 350px;
-  top: 40vh;
-  right: 5vh;
-  
   
 }
 .bienvenue {
@@ -236,4 +213,44 @@ main {
   p1 {
     font-size: 2.5rem;
   }
+}
+
+#slider {
+  position: relative;
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10vh;
+}
+
+#precedent,
+#suivant {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  position: absolute;
+  font-size: 100px;
+  color: rgba(220, 220, 220, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+
+#precedent {
+  left: 0;
+}
+
+#suivant {
+  right: 0;
+}
+
+#slider:hover #precedent,
+#slider:hover #suivant {
+  opacity: 1;
+}
+
+#slide {
+  width: 70vh;
+  
 }

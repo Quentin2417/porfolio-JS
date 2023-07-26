@@ -41,3 +41,15 @@ function graphique(){
     document.getElementById("boutton").style.display='none';
     document.getElementById("graphique").style.display='flex';
 }
+
+const slide = ["/img/onepiece-rpg.jpg", "/img/site-naruto.png", "/img/site-dbz.png"];
+let numero = 0;
+
+function ChangeSlide(sens) {
+    numero = numero + sens;
+    if (numero < 0)
+        numero = slide.length - 1;
+    if (numero > slide.length - 1)
+        numero = 0;
+    document.getElementById("slide").src = slide[numero];
+}
