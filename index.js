@@ -53,3 +53,6 @@ function ChangeSlide(sens) {
         numero = 0;
     document.getElementById("slide").src = slide[numero];
 }
+function cv(){
+    document.getElementById("CV").style.display="none";
+}

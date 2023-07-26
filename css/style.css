@@ -183,18 +183,6 @@ main {
   align-items: center;
   justify-content: center;
 }
-#CV {
-  color: white;
-  display: flex;
-  font-size: 30px;
-  align-items: center;
-  margin-top: 450px;
-  flex-direction: column;
-}
-#CV img {
-  width: 100px;
-  margin-top: -250px;
-}
 #imgcompet img {
   position: absolute;
   width: 80vh;
@@ -254,3 +242,15 @@ main {
   width: 70vh;
   
 }
+
+#bouton{
+  position: relative;
+  width: 15vh;
+  top: 50vh;
+  height: 10vh;
+  font-size: 50px;
+  color: white;
+  background-color: black;
+  border-color: #892cdc;
+}
+
