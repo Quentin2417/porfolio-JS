@@ -63,8 +63,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  
 }
 #hero-contact {
   background: url("/img/photocontact.jpg");
@@ -90,34 +89,34 @@ p {
   margin-left: 30px;
 }
 #icone-git{
-  position: absolute;
+  width: fit-content;
+  position: relative;
   top: 30vh;
-  left: 18vh;
+  left: 3%;
 }
 
 #icone-git img {
-  width: 150px;
   height: 150px; 
 }
 
 #icone-mail{
-  position: absolute;
+  position: relative;
   top: 22vh;
-  left: 120vh;
+  left: 80%;
+  width: fit-content;
 }
 
 #icone-mail img {
-  width: 120px;
   height: 120px;
   
 }
 #icone-in{
-  position: absolute;
-  top: 65vh;
-  left: 120vh;
+  width: fit-content;
+  position: relative;
+  top: 60vh;
+  left: 57%;
 }
 #icone-in img {
-  width: 150px;
   height: 150px;
   
 }
@@ -248,9 +247,27 @@ main {
   width: 15vh;
   top: 50vh;
   height: 10vh;
-  font-size: 50px;
+  font-size: 45px;
   color: white;
   background-color: black;
-  border-color: #892cdc;
+  border-color: #dc2c2c;
+  z-index: 0;
+  overflow: hidden;
+  
 }
-
+#bouton::before{
+  content:'';
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #e70c55;
+  border-radius: 50% 50% 0 0;
+  transition: all .5s;
+  z-index:  -1;
+} 
+#bouton:hover::before{
+  top: 0;
+  border-radius: 0;
+}
