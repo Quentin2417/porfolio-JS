@@ -15,9 +15,9 @@ a {
   margin-left: 20px;
 }
 nav {
-  display: flex !important;
+  display: flex;
   width: 100%;
-  margin-top: 10px !important;
+  margin-top: 10px;
   align-content: center;
   align-items: center;
   justify-content: space-evenly;
@@ -67,8 +67,9 @@ header {
 }
 #hero-contact {
   background: url("/img/photocontact.jpg");
-  display: none;
+  display:none;
   min-height: 100vh;
+  height: 100;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -89,10 +90,11 @@ p {
   margin-left: 30px;
 }
 #icone-git{
+  height: fit-content;
   width: fit-content;
-  position: relative;
+  position: fixed;
   top: 30vh;
-  left: 3%;
+  left: 10%;
 }
 
 #icone-git img {
@@ -100,10 +102,11 @@ p {
 }
 
 #icone-mail{
+  width: fit-content;
+  height: fit-content;
   position: relative;
   top: 22vh;
   left: 80%;
-  width: fit-content;
 }
 
 #icone-mail img {
@@ -111,10 +114,11 @@ p {
   
 }
 #icone-in{
+  height: fit-content;
   width: fit-content;
-  position: relative;
-  top: 60vh;
-  left: 57%;
+  position: fixed;
+  top: 60%;
+  left: 80%;
 }
 #icone-in img {
   height: 150px;
