@@ -1,3 +1,7 @@
+body{
+  height: 100vh;
+  width: 100vw;
+}
 h1 {
   color: green;
 }
@@ -52,6 +56,8 @@ header {
   background: url("/img/photocompetence.jpg");
   display: none;
   min-height: 100vh;
+  width: 100%;
+  height: max-content;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -69,14 +75,14 @@ header {
   background: url("/img/photocontact.jpg");
   display:none;
   min-height: 100vh;
-  height: 100;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 h2 {
   color: red;
-  font-size: 150px;
+  font-size: 1px;
   text-shadow: rgb(0, 255, 68) 1px 0 10px;
   margin-left: 60px;
   padding: 120px;
@@ -187,14 +193,14 @@ main {
   justify-content: center;
 }
 #imgcompet img {
-  position: absolute;
+  background-size: cover;
+  position: relative;
   width: 80vh;
   height: 50vh;
-  top: 30vh;
-  left: 33vh;
+  top: 4vh;
+  left: 0vh;
 }
-
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .bienvenue {
     font-size: 3rem;
   }
@@ -202,8 +208,36 @@ main {
     font-size: 3rem;
   }
   p1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
+   .hero-profil{
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 2.5rem;
+  } 
+  #imgcompet img{
+    background-size: cover;
+    position: relative;
+    width: 40vh;
+    height: 50vh;
+    top: 4vh;
+    left: 0vh;
+  }
+#boutton {
+    background: #131416;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50vh;
+    left: 16.5vh;
+}
+#slide {
+  width: 40vh;
+}
 }
 
 #slider {
@@ -243,7 +277,6 @@ main {
 
 #slide {
   width: 70vh;
-  
 }
 
 #bouton{
